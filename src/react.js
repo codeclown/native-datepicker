@@ -1,5 +1,5 @@
 const { createElement: h, useRef, useEffect, useState } = require('react');
-const BoringDatepickerClass = require('./BoringDatepicker');
+const BoringDatepickerClass = require('./index');
 
 const BoringDatepicker = ({
   value = '',

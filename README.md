@@ -42,7 +42,7 @@ See [API](#api).
 ### React
 
 ```jsx
-const BoringDatepicker = require('boring-datepicker/react');
+const BoringDatepicker = require('boring-datepicker/src/react');
 const SomeComponent = () => {
   const [date, setDate] = useState('2020-11-01');
   return (
