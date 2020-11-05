@@ -1,7 +1,7 @@
 const { createElement: h, useRef, useEffect, useState } = require('react');
-const BoringDatepickerClass = require('./index');
+const NativeDatepickerClass = require('./index');
 
-const BoringDatepicker = ({
+const NativeDatepicker = ({
   value = '',
   onChange = () => {},
   className = '',
@@ -11,7 +11,7 @@ const BoringDatepicker = ({
   const [datepicker, setDatepicker] = useState();
   useEffect(() => {
     if (spanRef.current) {
-      const picker = new BoringDatepickerClass({
+      const picker = new NativeDatepickerClass({
         existingElement: spanRef.current,
         onChange,
       });
@@ -34,4 +34,4 @@ const BoringDatepicker = ({
   );
 };
 
-module.exports = BoringDatepicker;
+module.exports = NativeDatepicker;

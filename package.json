@@ -1,8 +1,8 @@
 {
-  "name": "boring-datepicker",
+  "name": "native-datepicker",
   "version": "1.0.1",
   "main": "src/index.js",
-  "repository": "https://github.com/codeclown/boring-datepicker",
+  "repository": "https://github.com/codeclown/native-datepicker",
   "author": "Martti Laine <martti@marttilaine.com>",
   "license": "ISC"
 }

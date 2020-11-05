@@ -1,11 +1,11 @@
 const classNames = {
-  wrapper: 'BoringDatepicker',
-  input: 'BoringDatepicker__input',
+  wrapper: 'NativeDatepicker',
+  input: 'NativeDatepicker__input',
 };
 
 const dateRegex = /\d{4}-\d{2}-\d{2}/;
 
-class BoringDatepicker {
+class NativeDatepicker {
   constructor(options) {
     this.options = Object.assign(
       {
@@ -66,9 +66,9 @@ class BoringDatepicker {
   }
 
   addStylesheet() {
-    if (!this.options.win.document.querySelector('style#boringDatepicker')) {
+    if (!this.options.win.document.querySelector('style#nativeDatepicker')) {
       const style = this.options.win.document.createElement('style');
-      style.id = 'boringDatepicker';
+      style.id = 'nativeDatepicker';
       style.textContent = `
         .${classNames.wrapper} {
           display: inline-block;
@@ -107,4 +107,4 @@ class BoringDatepicker {
   }
 }
 
-module.exports = BoringDatepicker;
+module.exports = NativeDatepicker;

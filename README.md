@@ -1,4 +1,4 @@
-# boring-datepicker
+# native-datepicker
 
 > Styleable datepicker utilizing the native `<input type="date">`
 
@@ -28,8 +28,8 @@ Not supported (datepicker is hidden):
 ### Vanilla JS
 
 ```js
-const BoringDatepicker = require('boring-datepicker');
-const picker = new BoringDatepicker({
+const NativeDatepicker = require('native-datepicker');
+const picker = new NativeDatepicker({
   onChange: (newValue) => {
     console.log(newValue);
   },
@@ -42,11 +42,11 @@ See [API](#api).
 ### React
 
 ```jsx
-const BoringDatepicker = require('boring-datepicker/src/react');
+const NativeDatepicker = require('native-datepicker/src/react');
 const SomeComponent = () => {
   const [date, setDate] = useState('2020-11-01');
   return (
-    <BoringDatepicker value={date} onChange={(newValue) => setDate(newValue)} />
+    <NativeDatepicker value={date} onChange={(newValue) => setDate(newValue)} />
   );
 };
 ```
@@ -55,7 +55,7 @@ See [React API](#react-api).
 
 ## API
 
-### `class BoringDatepicker`
+### `class NativeDatepicker`
 
 #### `constructor(options)`
 
@@ -91,7 +91,7 @@ Set the value of the datepicker.
 - `"2020-11-01 13:15:00"`
 - `"2020-11-01T13:15:00"`
 
-Upon changes, BoringDatepicker will replace the date-portion of the string and return the result.
+Upon changes, NativeDatepicker will replace the date-portion of the string and return the result.
 
 #### `element`
 
@@ -99,18 +99,18 @@ Contains a reference to the datepicker element.
 
 ## React API
 
-### `BoringDatepicker` component
+### `NativeDatepicker` component
 
 Props:
 
 ```jsx
-<BoringDatepicker
+<NativeDatepicker
   value={date}
   onChange={(newValue) => {}}
   className="customClassName"
 >
   {optionalChildren}
-</BoringDatepicker>
+</NativeDatepicker>
 ```
 
 #### `props.value`
@@ -140,8 +140,8 @@ Custom className for the created element.
 Example with `className="CustomClass"`:
 
 ```html
-<span class="BoringDatepicker CustomClass">
-  <input class="BoringDatepicker__input" type="date" />
+<span class="NativeDatepicker CustomClass">
+  <input class="NativeDatepicker__input" type="date" />
 </span>
 ```
 
@@ -152,9 +152,9 @@ If `children` are given, they are inserted into the resulting DOM. This can be u
 Example:
 
 ```html
-<span class="BoringDatepicker">
+<span class="NativeDatepicker">
   <!-- Children will be inserted here -->
-  <input class="BoringDatepicker__input" type="date" />
+  <input class="NativeDatepicker__input" type="date" />
 </span>
 ```
 
@@ -163,22 +163,22 @@ Example:
 The following DOM is created for each datepicker:
 
 ```html
-<span class="BoringDatepicker">
-  <input class="BoringDatepicker__input" type="date" />
+<span class="NativeDatepicker">
+  <input class="NativeDatepicker__input" type="date" />
 </span>
 ```
 
 The recommended way to style the datepicker is to apply styles (e.g. width/height and a background-image) to the topmost element. Example:
 
 ```css
-.BoringDatepicker {
+.NativeDatepicker {
   width: 16px;
   height: 16px;
   background: transparent url(...) no-repeat center center;
 }
 ```
 
-Note: under normal circumstances you should not add any styles to `.BoringDatepicker__input`!
+Note: under normal circumstances you should not add any styles to `.NativeDatepicker__input`!
 
 ## Development
 
