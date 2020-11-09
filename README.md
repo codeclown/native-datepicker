@@ -12,6 +12,10 @@ Features:
 - Supports datetime strings (only replaces date-portion upon change)
 - Simple styling, with BEM classes
 
+Example/demo:
+
+- [https://codeclown.github.io/native-datepicker/example.html](https://codeclown.github.io/native-datepicker/example.html)
+
 ## Browser support
 
 Supported:
@@ -42,7 +46,7 @@ someElement.appendChild(picker.element);
 
 See [API](#api).
 
-See also [example.html](./example.html).
+See also [`example.html` (source)](./example.html).
 
 ### React
 
