@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+Fixed:
+
+- Fixed an issue where React-component would initialize the datepicker twice
+
 ## 1.1.0
 
 Added:

@@ -10,7 +10,7 @@ const NativeDatepicker = ({
   const spanRef = useRef(null);
   const [datepicker, setDatepicker] = useState();
   useEffect(() => {
-    if (spanRef.current) {
+    if (spanRef.current && !datepicker) {
       const picker = new NativeDatepickerClass({
         existingElement: spanRef.current,
         initialValue: value,
@@ -18,7 +18,7 @@ const NativeDatepicker = ({
       });
       setDatepicker(picker);
     }
-  }, [spanRef.current]);
+  }, [spanRef.current, datepicker]);
   useEffect(() => {
     if (datepicker) {
       datepicker.setValue(value);
