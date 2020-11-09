@@ -78,6 +78,23 @@ Callback function which is called when the user selects a new date.
 
 Receives the new value as string (e.g. `"2020-11-01"` or `"2020-11-01 13:15:00"`; just the date-portion of the original value is replaced).
 
+##### `options.initialValue`
+
+type: `string` default: `""`
+
+Set the initial date input value.
+
+These are equivalent:
+
+```js
+const datepicker = new NativeDatepicker({
+  initialValue: '2020-11-09 12:43:00',
+});
+// or
+const datepicker = new NativeDatepicker();
+datepicker.setValue('2020-11-09 12:43:00');
+```
+
 ##### `options.existingElement`
 
 type: `DOMElement` default: `null`
