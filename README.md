@@ -2,6 +2,9 @@
 
 > Styleable datepicker utilizing the native `<input type="date">`
 
+[![native-datepicker on npm](https://img.shields.io/badge/npm-native--datepicker-blue)](https://www.npmjs.com/package/native-datepicker)
+[![codeclown/native-datepicker on GitHub](https://img.shields.io/badge/github-codeclown%2Fnative--datepicker-lightgrey)](https://github.com/codeclown/native-datepicker)
+
 Features:
 
 - Light-weight, no dependencies
