@@ -193,6 +193,18 @@ Note: under normal circumstances you should not add any styles to `.NativeDatepi
 
 Source files reside in `src/`. Note that `src/index.js` is not precompiled in any way; it should remain valid ES5 (no worries, though; this is checked by eslint).
 
+## Release process (for maintainers)
+
+Keep [`CHANGELOG.md`](./CHANGELOG.md) up-to-date. Run:
+
+```bash
+yarn test
+# will ask for updated version number
+yarn publish
+# remember to push commits and tags to remote
+git push --follow-tags
+```
+
 ## License
 
 [ISC](./LICENSE)
