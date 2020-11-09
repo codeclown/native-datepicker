@@ -42,6 +42,8 @@ someElement.appendChild(picker.element);
 
 See [API](#api).
 
+See also [example.html](./example.html).
+
 ### React
 
 ```jsx

@@ -13,9 +13,9 @@ const NativeDatepicker = ({
     if (spanRef.current) {
       const picker = new NativeDatepickerClass({
         existingElement: spanRef.current,
+        initialValue: value,
         onChange,
       });
-      picker.setValue(value);
       setDatepicker(picker);
     }
   }, [spanRef.current]);
