@@ -191,7 +191,7 @@ Note: under normal circumstances you should not add any styles to `.NativeDatepi
 
 ## Development
 
-Source files reside in `src/`. They should be remain valid ES5 code (they are not precompiled in any way).
+Source files reside in `src/`. Note that `src/index.js` is not precompiled in any way; it should remain valid ES5 (no worries, though; this is checked by eslint).
 
 ## License
 
